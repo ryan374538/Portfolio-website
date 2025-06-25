@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+}
 .pictureintro{
     background-color:rgb(26, 3, 82);
     width: 100%;
@@ -13,14 +16,20 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: relative;
+    z-index: -3;
 }
 .picture{
     width: 100%;
-    max-width: 510px;
+    max-width: 500px;
     aspect-ratio:1/1;
-    background-color:rgb(26, 3, 82);
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px 15px rgba(110, 72, 206, 0.466); 
+    background-color: rgb(26, 3, 82);
+    border-radius: 30px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative; 
 }
 .intro{
     width: 100%;
@@ -28,15 +37,14 @@
 }
 .about{
     min-height: 100vh;
-    background-color: rgb(26, 3, 82);
     text-align: center;
-
 }
 .aboutme{
     font-family: 'poppins' , sans-serif;
     font-size: clamp(2rem ,5vw ,9rem);
     background: linear-gradient( to right, purple,blue,purple,blue,purple);
     background-size: 200%;
+    margin-top: 30px;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,4 +67,34 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-gradient 2.5s linear infinite;
+}
+@property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits:false;
+}
+.picture::after,
+.picture::before{
+    content: '';
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    z-index: -1;
+    padding: 0px;
+    border-radius: 30px;
+    background: conic-gradient(from var(--angle),purple,blue,purple,blue,purple);
+    animation:3s spin linear infinite;
+}
+.picture::before{
+    filter: blur(30px);
+    opacity: 0.8;
+}
+@keyframes spin {
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    } 
 }
