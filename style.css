@@ -9,14 +9,14 @@
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 10vw;
+    gap: 2vw;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 .picture{
     width: 100%;
-    max-width: 450px;
+    max-width: 510px;
     aspect-ratio:1/1;
     background-color:rgb(38, 0, 128);
     border-radius: 20px;
@@ -24,11 +24,7 @@
 }
 .intro{
     width: 100%;
-    max-width: 450px;
-    aspect-ratio:1/1;
-    background-color:rgb(38, 0, 128);
-    border-radius: 20px;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.466);   
+    max-width: 510px;
 }
 .about{
     min-height: 100vh;
@@ -36,9 +32,9 @@
     text-align: center;
     padding-top: 2vh;
 }
-h1{
+.aboutme{
     font-family: 'poppins' , sans-serif;
-    font-size: 6rem;
+    font-size: clamp(2rem ,6rem ,9rem);
     background: linear-gradient( to right, purple,blue,purple,blue,purple);
     background-size: 200%;
     background-clip: text;
@@ -51,4 +47,16 @@ h1{
         background-position: 200%;
     }
     
+}
+h1{
+    font-size:4rem;
+    color: white;
+}
+.text{
+    background: linear-gradient( to right, purple,blue,purple,blue,purple);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
 }
