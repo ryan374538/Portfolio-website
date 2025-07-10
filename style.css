@@ -222,7 +222,7 @@ p{
     margin-top: 20px;
     justify-content: center;
     font-size: 6rem;
-    color:rgb(170, 90, 246) ;
+    color:rgb(202, 150, 251) ;
    
 }
 .card1{
@@ -245,4 +245,8 @@ p{
     aspect-ratio: 1/1.2;
     max-width: 300px;
     border-radius: 20px;
+}
+.images i:hover{
+    background-color: blueviolet;
+
 }
