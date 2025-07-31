@@ -7,15 +7,15 @@ body{
     position: relative;
 }
 .pictureintro{
-    background-color:rgb(17, 2, 52);
+    background-color:rgb(31, 29, 39);
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 2vw;
+    gap: 60px;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     position: relative;
     z-index: -3;
     margin: 0;
@@ -136,11 +136,11 @@ h1{
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     flex-wrap: wrap;
     z-index: -1;
     background-color: transparent ;
-    gap: 30px;
+    gap: 60px;
     padding-top: 20px;
 }
 .about-text{
@@ -184,7 +184,7 @@ p{
     animation: animate-gradient 2.5s linear infinite;
 }
 .my-projects{
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -214,7 +214,7 @@ p{
 }
 .what-is-said{
     width: 100%;
-    min-height: 100vh 
+    min-height: 50vh 
 }
 .images{
     display: flex;
@@ -226,27 +226,27 @@ p{
    
 }
 .card1{
-    background-color: blueviolet;
+    background-color: rgb(111, 82, 138);
     width: 100%;
     aspect-ratio: 1/1.2;
     max-width: 300px;
     border-radius: 20px;
 }
 .card2{
-    background-color: blueviolet;
+    background-color: rgb(111, 82, 138);
     width: 100%;
     aspect-ratio: 1/1.2;
     max-width: 300px;
     border-radius: 20px;
 }
 .card3{
-    background-color: blueviolet;
+    background-color:  rgb(111, 82, 138);
     width: 100%;
     aspect-ratio: 1/1.2;
     max-width: 300px;
     border-radius: 20px;
 }
 .images i:hover{
-    background-color: blueviolet;
+    background-color: rgb(111, 82, 138);
 
 }
