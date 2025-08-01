@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     position: relative;
+    background-color: rgb(31, 29, 39);
 }
 
 .glow-wrapper {
@@ -65,7 +67,6 @@ body {
 }
 
 .pictureintro {
-    background-color: rgb(31, 29, 39);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -74,7 +75,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    position: relative;
     margin: 0;
 }
 
@@ -110,12 +110,12 @@ body {
 }
 
 h1 {
-    font-size: clamp(2.7rem, 4vw, 7rem);
+    font-size: clamp(2.7rem, 4.5vw, 7rem);
     color: white;
 }
 
 .text {
-    background: linear-gradient(to right, purple, blue, purple, blue, purple);
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.79), rgba(0, 0, 255, 0.79), rgba(128, 0, 128, 0.79), rgba(0, 0, 255, 0.79), rgba(128, 0, 128, 0.79));
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -154,34 +154,49 @@ p {
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(16, 16, 16, 0.696);
+    backdrop-filter: blur(10px);
 }
 
 .logo{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: rgb(157, 103, 207);
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 .header nav ul {
     display: flex;
     list-style: none;
-    gap: 10vw;
-    font-size: clamp(0.9rem, 1.5vw, 5rem);
+    gap: 4rem;
+    font-size: 1.4rem;
     cursor: pointer;
-    padding-right: 20px;
+    padding-right: 35px;
+    font-family: 'poppins' sans-serif;
+    
 }
 
 .header nav ul a {
     text-decoration: none;
     color: white;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    aspect-ratio: 10/1;
+    border-radius: 30px;
+    padding: 10px 20px;
+    white-space: nowrap;
 }
 
 .header nav ul a:hover {
     background: linear-gradient(to right, purple, blue, purple, blue, purple);
     background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
+    border: solid 2px white;
     animation: animate-gradient 2.5s linear infinite;
 }
 
@@ -242,29 +257,39 @@ p {
     border-radius: 20px;
 }
 
-.menu-toggle{
+.menu-toggle {
     display: none;
+    font-size: 2rem;
+    cursor: pointer;
     color: white;
-    font-size: 1.7rem;
-}
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .header nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: rgba(16, 16, 16, 0.696);
+      backdrop-filter: blur(10px);
+      position: absolute;
+      top: 85px;
+      right: 0;
+      width: 100%;
+      padding: 30px;
+      gap: 30px;
+      text-align: center;
+      z-index: 999;
+    }
+  
+    .header nav ul.show {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
 
-@media (max-width:600px) {
-    .header nav ul{
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        padding: 20px;
-        width: 100%;
-        right: 0;
-        top: 100%;
-        background-color: rgb(31, 29, 39);
-        z-index: 999;
-    }
-    .header nav ul.show{
-        display: flex;
-    }
-    .menu-toggle{
-        display: block;
-    }
+
     
-}
