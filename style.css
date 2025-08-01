@@ -185,11 +185,12 @@ p {
     text-decoration: none;
     color: white;
     white-space: nowrap;
-    transition: all 0.2s ease;
-    aspect-ratio: 10/1;
+    transition: all 0.7s ease;
     border-radius: 30px;
     padding: 10px 20px;
     white-space: nowrap;
+    border: solid 2px transparent;
+    animation: animate-gradient 2.5s linear infinite;
 }
 
 .header nav ul a:hover {
@@ -197,7 +198,7 @@ p {
     background-size: 200%;
     color: white;
     border: solid 2px white;
-    animation: animate-gradient 2.5s linear infinite;
+    
 }
 
 .my-projects {
@@ -262,10 +263,14 @@ p {
     font-size: 2rem;
     cursor: pointer;
     color: white;
+    padding-left:44px ;
   }
   
   /* Mobile styles */
   @media (max-width: 768px) {
+    .header{
+        backdrop-filter: none;
+    }
     .header nav ul {
       display: none;
       flex-direction: column;
