@@ -156,6 +156,7 @@ p {
     color: white;
     padding: 20px;
     width: 100%;
+    height: 13vh;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -164,16 +165,17 @@ p {
 }
 
 .logo{
-    font-size: clamp(2rem,2vw,3.5rem);
+    font-size: clamp(2rem,3.2vw,3.5rem);
     color: rgb(157, 103, 207);
     font-weight: bold;
     padding-left: 10px;
+    padding-right: 40px;
 }
 
 .header nav ul {
     display: flex;
     list-style: none;
-    gap: 4rem;
+    gap: 10vh;
     font-size: 1.4rem;
     cursor: pointer;
     padding-right: 35px;
@@ -277,7 +279,7 @@ p {
       background-color: rgba(16, 16, 16, 0.696);
       backdrop-filter: blur(10px);
       position: absolute;
-      top: 85px;
+      top: 13vh;
       right: 0;
       width: 100%;
       padding: 30px;
