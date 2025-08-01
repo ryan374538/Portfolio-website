@@ -34,7 +34,7 @@ body {
 }
 
 .glow-wrapper::before {
-    filter: blur(30px);
+    filter: blur(40px);
     opacity: 0.8;
 }
 @property --angle {
@@ -50,6 +50,11 @@ body {
     to {
         --angle: 360deg;
     }
+}
+.picture{
+    background-image: url('img/cyber-security-experts-working-with-tech-devices-neon-lights.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .picture,
@@ -76,6 +81,7 @@ body {
     align-items: center;
     padding: 15px;
     margin: 0;
+    padding-top: 50px;
 }
 
 .intro {
@@ -133,7 +139,7 @@ h1 {
     z-index: 1;
     background-color: transparent;
     gap: 60px;
-    padding-top: 20px;
+    padding-top: 10vh;
 }
 
 .about-text {
@@ -202,6 +208,12 @@ p {
     border: solid 2px white;
     
 }
+.header nav ul a:active{
+    background: linear-gradient(to right, purple, blue, purple, blue, purple);
+    background-size: 200%;
+    color: white;
+    border: solid 2px white; 
+}
 
 .my-projects {
     min-height: 50vh;
@@ -249,15 +261,27 @@ p {
 }
 
 .images i:hover {
-    background-color: rgb(111, 82, 138);
+    color: rgb(111, 82, 138);
 }
 
 .card {
-    background-color: rgb(111, 82, 138);
+    background-color: rgb(24, 22, 34);
     width: 100%;
     aspect-ratio: 1/1.2;
     max-width: 300px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+bakery{
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 7/1;
+    background-image: url('img/Screenshot\ 2025-08-01\ 233654.png');
+    border-radius: 20px;
+    background-size: cover;
 }
 
 .menu-toggle {
