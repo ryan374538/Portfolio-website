@@ -81,6 +81,7 @@ body {
 .intro {
     width: 100%;
     max-width: 500px;
+    text-align: center;
 }
 
 .about {
@@ -109,7 +110,7 @@ body {
 }
 
 h1 {
-    font-size: clamp(2.7rem, 5vw, 7rem);
+    font-size: clamp(2.7rem, 4vw, 7rem);
     color: white;
 }
 
@@ -150,20 +151,18 @@ p {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: white;
     padding: 10px;
     width: 100%;
-    position: relative;
-    z-index: 1999;
 }
 
 .header nav ul {
     display: flex;
     list-style: none;
     gap: 10vw;
-    font-size: clamp(0.8rem, 1.5vw, 5rem);
+    font-size: clamp(0.9rem, 1.5vw, 5rem);
     cursor: pointer;
 }
 
@@ -236,4 +235,29 @@ p {
     aspect-ratio: 1/1.2;
     max-width: 300px;
     border-radius: 20px;
+}
+
+.menu-toggle{
+    display: none;
+    color: white;
+}
+
+@media (max-width:600px) {
+    .header nav ul{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        right: 0;
+        top: 100%;
+        background-color: rgb(31, 29, 39);
+    }
+    .header nav ul.show{
+        display: flex;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    
 }
