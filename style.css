@@ -56,6 +56,11 @@ body {
     background-position: center;
     background-size: cover;
 }
+.pic2{
+    background-image: url('img/2ea96109b8c1ec1f795f2a05dce14faf.jpg');
+    background-position: center;
+    background-size: cover;
+}
 
 .picture,
 .pic2 {
@@ -251,7 +256,7 @@ p {
     min-height: 50vh;
 }
 
-.images {
+.images{
     display: flex;
     gap: 2vw;
     margin-top: 20px;
@@ -259,8 +264,11 @@ p {
     font-size: 6rem;
     color: rgb(202, 150, 251);
 }
+.images a{
+    color:rgb(202, 150, 251);
+}
 
-.images i:hover {
+.images  a:hover {
     color: rgb(111, 82, 138);
 }
 
@@ -268,20 +276,41 @@ p {
     background-color: rgb(24, 22, 34);
     width: 100%;
     aspect-ratio: 1/1.2;
-    max-width: 300px;
+    max-width: 320px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
+    padding: 20px;
 
 }
 
-bakery{
+.bakery{
     width: 100%;
-    max-width: 250px;
-    aspect-ratio: 7/1;
-    background-image: url('img/Screenshot\ 2025-08-01\ 233654.png');
-    border-radius: 20px;
+    max-width: 280px;
+    height: 300px;
+    background-image: url('img/Screenshot\ 2025-08-02\ 183915.png');
+    border-radius: 10px;
     background-size: cover;
+}
+
+.calc{
+    width: 100%;
+    max-width: 280px;
+    height: 300px;
+    background-image: url('img/Screenshot\ 2025-08-02\ 184319.png');
+    border-radius: 10px;
+    background-size: cover;
+
+}
+
+.housing{
+    width: 100%;
+    max-width: 280px;
+    height: 300px;
+    background-image: url('img/Screenshot\ 2025-08-02\ 184647.png');
+    border-radius: 10px;
+    background-size: cover;
+
 }
 
 .menu-toggle {
