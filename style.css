@@ -52,12 +52,12 @@ body {
     }
 }
 .picture{
-    background-image: url('img/cyber-security-experts-working-with-tech-devices-neon-lights.jpg');
     background-position: center;
+    background-image: url('img/2ea96109b8c1ec1f795f2a05dce14faf.jpg');
     background-size: cover;
 }
 .pic2{
-    background-image: url('img/2ea96109b8c1ec1f795f2a05dce14faf.jpg');
+    background-image: url('img/cyber-security-experts-working-with-tech-devices-neon-lights.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -144,7 +144,7 @@ h1 {
     z-index: 1;
     background-color: transparent;
     gap: 60px;
-    padding-top: 10vh;
+    padding-top: 8vh;
 }
 
 .about-text {
@@ -167,7 +167,7 @@ p {
     color: white;
     padding: 20px;
     width: 100%;
-    height: 13vh;
+    height: 12vh;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -176,7 +176,7 @@ p {
 }
 
 .logo{
-    font-size: clamp(2rem,3.2vw,3.5rem);
+    font-size: clamp(1.7rem,3.2vw,3.5rem);
     color: rgb(157, 103, 207);
     font-weight: bold;
     padding-left: 10px;
@@ -247,7 +247,7 @@ p {
 
 .footer {
     min-width: 100%;
-    height: 60vh;
+    min-height: 50vh;
     margin-top: -5px;
 }
 
@@ -261,7 +261,7 @@ p {
     gap: 2vw;
     margin-top: 20px;
     justify-content: center;
-    font-size: 6rem;
+    font-size:clamp(4rem,8vw,5rem);
     color: rgb(202, 150, 251);
 }
 .images a{
@@ -278,7 +278,6 @@ p {
     aspect-ratio: 1/1.2;
     max-width: 320px;
     border-radius: 20px;
-    display: flex;
     justify-content: center;
     padding: 20px;
 
@@ -288,7 +287,7 @@ p {
     width: 100%;
     max-width: 280px;
     height: 300px;
-    background-image: url('img/Screenshot\ 2025-08-02\ 183915.png');
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('img/Screenshot\ 2025-08-02\ 183915.png');
     border-radius: 10px;
     background-size: cover;
 }
@@ -297,7 +296,7 @@ p {
     width: 100%;
     max-width: 280px;
     height: 300px;
-    background-image: url('img/Screenshot\ 2025-08-02\ 184319.png');
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('img/Screenshot\ 2025-08-02\ 184319.png');
     border-radius: 10px;
     background-size: cover;
 
@@ -307,7 +306,7 @@ p {
     width: 100%;
     max-width: 280px;
     height: 300px;
-    background-image: url('img/Screenshot\ 2025-08-02\ 184647.png');
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('img/Screenshot\ 2025-08-02\ 184647.png');
     border-radius: 10px;
     background-size: cover;
 
@@ -332,7 +331,7 @@ p {
       background-color: rgba(16, 16, 16, 0.696);
       backdrop-filter: blur(10px);
       position: absolute;
-      top: 13vh;
+      top: 12vh;
       right: 0;
       width: 100%;
       padding: 30px;
@@ -348,6 +347,40 @@ p {
     .menu-toggle {
       display: block;
     }
+  }
+  button{
+    padding:10px 20px;
+    border-radius: 20px;
+    margin-top: 4vh;
+    border: none;
+    background-color: rgb(157, 103, 207);
+    color: white;
+    font-weight: bold;
+    transition: all 1s ease;
+    text-decoration: none;
+  }
+
+  button:hover{
+    background: linear-gradient(to right,blue, purple);
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+
+  .button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+   a .button {
+    text-decoration: none;
+  }
+
+  .resume{
+    padding: 18px 30px;
+    margin-top: 5vh;
+    border: solid white 2px;
+    background-color: transparent;
+    font-size: 1rem;
   }
   
 
