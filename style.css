@@ -250,6 +250,8 @@ p {
     min-width: 100%;
     min-height: 50vh;
     margin-top: -5px;
+    background-color: rgb(24, 22, 34);
+    border-radius: 30px;
 }
 
 .what-is-said {
