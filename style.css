@@ -230,6 +230,7 @@ p {
     flex-wrap: wrap;
     flex-grow: 2;
     gap: 5vw;
+    padding: 20px;
 }
 
 .project {
@@ -248,8 +249,9 @@ p {
 
 .footer {
     min-width: 100%;
-    min-height: 60vh;
+    min-height: 55vh;
     margin-top: -5px;
+    padding: 10px;
     background-color: rgb(24, 22, 34);
 }
 
@@ -263,7 +265,7 @@ p {
     gap: 2vw;
     margin-top: 20px;
     justify-content: center;
-    font-size:clamp(4rem,4vw,5rem);
+    font-size:clamp(3rem,4vw,5rem);
     color: rgb(202, 150, 251);
 }
 .images a{
@@ -282,7 +284,6 @@ p {
     border-radius: 20px;
     justify-content: center;
     padding: 20px;
-
 }
 
 .bakery{
@@ -395,7 +396,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: clamp(1.5rem, 2vw, 8rem);
     color:rgb(202, 150, 251) ;
     gap: 10px;
