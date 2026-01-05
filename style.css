@@ -140,12 +140,12 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 50vh;
+    min-height: 40vh;
     flex-wrap: wrap;
     z-index: 1;
     background-color: transparent;
     gap: 60px;
-    padding-top: 8vh;
+    padding-top: 10vh;
 }
 
 .about-text {
